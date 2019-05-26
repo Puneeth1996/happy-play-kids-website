@@ -16,35 +16,16 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 // adding the marker to latlong coordinate to the map
 var marker = L.marker([13.066236, 77.559109]).addTo(mymap);
 
-// adding the circle to latlong coordinate to the map
-var circle = L.circle([13.072662, 77.552952], {
-    color: 'red',
-    fillColor: 'light-cyan',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(mymap);
-
-// adding the polygon to latlong coordinate to the map
-var polygon = L.polygon([
-    [13.072365, 77.546923],
-    [13.070862, 77.566474],
-    [13.059336, 77.567841],
-    [13.059837, 77.540235]
-]).addTo(mymap);
-
 // the below three lines helps in showing the message using a simple Popup
-marker.bindPopup("<b>Happy Play Kids!</b><br>We Are Here.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+marker.bindPopup("<b>Happy Play Kids</b><br>We Are Here.").openPopup();
 
 // adding a additional popup as required at any latlong
 var popup = L.popup()
     .setLatLng([13.066236, 77.559109])
-    .setContent("We Are Happy Play Kids!!!.")
+    .setContent("Happy Play Kids")
     .openOn(mymap);
 // This below method is run right after script loads 
 var popup = L.popup();
-
 
 // onMapClick function is used return the latlong at cursor click event.
 function onMapClick(e) {

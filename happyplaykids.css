@@ -1,0 +1,439 @@
+/* CSS FOR LeafLet maps  */
+#mapid {
+	height: 50vh;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -25%);
+	margin-top: 15em;
+	
+}
+
+html,
+body,
+.cover {
+    height: 100%;
+}
+
+.cover {
+    background: url('img/kids.jpg') top left no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20%;
+    box-shadow: inset 0 0 100px #000;
+}
+
+.cover-text {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -2px;
+}
+
+nav.navbar-inverse {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.testimonial {
+    background: #222;
+}
+
+blockquote {
+    border: none;
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size: 32px;
+    color: white;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    margin-top: 40px;
+}
+
+section {
+    padding: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 60px;
+}
+
+h2 + p {
+    text-align: center;
+    margin-top: -60px;
+}
+
+#team {
+    background: url('img/fan.jpg') top left no-repeat;
+	
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, Times, serif;
+}
+
+footer a {
+    color: hotpink;
+}
+
+/* Media Queries */
+
+@media only screen and ( max-width : 568px ) {
+    .cover h1 {
+        font-size: 40px;
+    }
+    section {
+        padding: 20px;
+    }
+    
+}
+
+
+<!--------------------------------!?>
+#container1{
+    font-size: 2vw;
+}
+
+.text{
+  display: inline-block;
+  position:relative;
+  top:50px;
+  left:220px;   
+}
+
+
+h4{
+	text-align: center;
+	color: rgb(84, 84, 84);
+	font-weight: bolder;
+	margin-top: -18px;
+}
+
+
+/* Absolute positioning of first container */
+#positioning #container1{
+	background: white;
+	padding: 20px;
+	position:relative;
+}
+
+
+.box{
+	margin-top:5px;
+	background: blue;
+	color: white;
+	height:60px;
+	width:100px;
+	text-align:center;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family:Helvetica,Arial, sans-serif;
+	font-size:2vw;
+	font-weight:bold;
+	border-radius: 15px;
+}
+
+.box {
+  position: absolute;
+  top: 30%;
+  right:0;
+  bottom:0;
+  left:50%;
+  transform: translate(-30%, -50%);
+  color: white;
+  font-family:Arial;
+  font-size:2vw;
+  font-weight:bolder;
+	
+}
+
+.center-box{
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:-55px;
+	left:7;
+	z-index: 99;
+	margin:auto;
+	height:100px;
+	width:100px;
+	line-height: 18px;
+	font-size: 20px;
+}
+
+
+.contact{
+	position: absolute;
+	top:38px;
+	right:5px;
+	font-size:2vw;
+}
+
+.email{
+	position: absolute;
+	top:64px;
+	right:5px;
+	font-size:2vw;
+}
+
+.login1{
+  	position: absolute;
+	top:8px;
+	right:5px;
+	font-size:2vw;	
+}
+
+.vidyaranyapura{
+	position: absolute;
+	top:8px;
+	left:5px;
+	font-size:2vw;
+	
+}
+
+.jd{
+    position: absolute;
+	top:45px;
+	left:5px;
+	font-size:2vw;
+    
+}
+
+
+/* 
+Responsive images
+*/
+
+
+
+.sticky {
+  	margin-top: 51px;
+	background: rgba(107, 95, 98, 0.9);
+	position: fixed;
+	top:0;
+	height:100px;
+	width:100%;
+	z-index: 99;
+	box-shadow: 0 0 10px rgba(0 0 0 0.2);
+}
+
+
+/* Services styles */
+
+#services1{
+	background-color: rgba(239, 239, 239, 0.9);	
+}
+
+.responsive{
+	box-sizing: border-box;
+}
+
+.service{
+	border: solid 1px #ccc;
+}
+
+.service img{
+	width:100%;
+	height: auto;
+}
+
+.des{
+	padding: 15px;
+	text-align: center;
+}
+
+.responsive{
+	padding:0 6px;
+	float:left;
+	width:20%;
+}
+
+
+@media only screen and(max-width:700px){
+	.responsive{
+	margin-top: 30px;
+	width:50%;
+	}
+}
+
+@media only screen and (max-width:500px){
+	.responsive{
+	margin-top: 10px;
+	width:50%;
+	}
+	
+}
+
+h2{
+	margin-top: 84px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: "Dancing Script";
+	color: rgb(222, 109, 102);
+	
+	
+}
+
+/*Gallery Styles */
+
+#gallery1{
+	margin-top: 800px;
+
+}
+
+.responsive1{
+	box-sizing: border-box;
+}
+
+.gallery{
+	border: solid 1px #ccc;
+}
+
+.gallery img{
+	max-width: 900px;
+	width:100%;
+	height: auto;
+}
+
+
+.responsive1{
+	padding:0 6px;
+	float:left;
+	width:33%; /* because 33 * 3 images */
+}
+
+
+#bootstrap1{
+	background-color: rgba(239, 239, 239, 0.9);	
+}	
+
+
+@media only screen and(max-width:700px){
+	.gallery{
+	margin-top: 30px;
+	width:100%;
+	}
+}
+
+@media only screen and (max-width:500px){
+	.gallery{
+	margin-top:10px;
+	width:100%;
+	}
+	
+}
+
+
+/*About Us */
+
+
+#aboutus1{
+background-color: rgba(239, 239, 239, 0.9);	
+}
+
+#responsive3{
+box-sizing: border-box;
+}
+
+.about{
+border: solid 1px #ccc;
+}
+
+.about img{
+width:55%;
+float:right;
+height:auto;
+}
+
+.desabout{
+width:40%;
+float:left;
+padding: 10px;
+text-align: center;
+}
+
+#responsive3{
+padding:0 6px;
+float:left;
+width:100%;
+}
+
+.clearfix :after{
+content: "";
+display: table;
+clear: both;
+
+}
+
+@media only screen and(max-width:700px){
+#responsive{
+margin-top: 30px;
+width:100%;
+}
+}
+
+@media only screen and (max-width:500px){
+#responsive{
+margin-top: 10px;
+width:100%;
+}
+
+}
+
+h2{
+margin-top: 84px;
+margin-bottom: 20px;
+text-align: center;
+font-family: "Dancing Script";
+color: rgb(222, 109, 102);
+}
+
+
+
+#abs{
+	text-align: center;
+}
+/* testimonial */
+
+/*Contact Us */
+
+#bold{
+	font-size: bolder;
+	text-align: center;
+	
+}
+
+.lead{
+	text-align: center;
+}
+
+
+

@@ -4,16 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
     <title>HappyPlay Kids</title>
-
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="happyplaykids.css" rel="stylesheet">
-	
-
 	<!-- Normalize.css -->
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -23,33 +18,23 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-
 </head>
 <body>
 	
-    <div id="container1" class="sticky">
-      
+    <div id="container1" class="sticky">      
 	<div id="positioning">
     <div id="container"> 
-		<!--absolute positioning of box class-->
-		
-		<!--<h2>HewlettPackard</h2>-->
-		<div id="absolute" class="box"><div class="center-box">Happy Play<br>Kids</div></div>
-	
-		<!--absolute positioning of Vidyaranyapura location-->
-		
-		
-		<div id="absolute" class="vidyaranyapura">
-		<p class="lead">	
-		<img src="https://img.icons8.com/material/20/000000/marker.png"><a id="vidyaranyapura" href="http://vidyaranyapura.com">Vidyaranyapura </a></p>
-
-		
+		<div id="absolute" class="box">
+			<div class="center-box">Happy Play<br>Kids</div>
 		</div>
-	
-		
+		<div id="absolute" class="vidyaranyapura">
+			<p class="lead">	
+			<img src="https://img.icons8.com/material/20/000000/marker.png"><a id="vidyaranyapura" href="http://vidyaranyapura.com">Vidyaranyapura </a></p>
+		</div>
 	    <!--absolute positioning of contact number-->
- 		<div id="absolute" class="contact"><p class="lead">
-		<img src="https://img.icons8.com/ios/16/000000/phone.png">+917676354206</p>
+ 		<div id="absolute" class="contact">
+			 <p class="lead">
+				 <img src="https://img.icons8.com/ios/16/000000/phone.png">+917676354206</p>
 		</div>
 		
 	
@@ -68,7 +53,7 @@
    </div><!--#end container-->
 	
    <!-- Responsive Image background-->
-    <div class="cover">
+    <div class="cover" id="home_nav">
         <div class="cover-text">
             <h1>Making Learning and Growing Easy for Kids.</h1>
             <p class="lead">We're that "cool" vegan uncle who doesn't have kids and somehow makes a living repairing antique polaroid cameras, while drinking a $38 bottle of artisanal cold-brew.</p>
@@ -167,7 +152,7 @@
 	<div id="gallery1">
 		
 	<h2>Gallery</h2>
-		
+			
 	<div class="responsive1">
 		<div class="gallery">
 			<img class="gall1" src="img/1g.jpg" width="100px" height="200">	
@@ -215,29 +200,18 @@
 		
 	<div id="aboutus">
 		
-	<h2>About Us</h2>
-	
+	<h2>About Us</h2>	
 	<!--About Us test-->
-		
-	
 	<div class="row">
                 <div class="col-md-6">
-                    
-					
 					<h3 id=abs>About Us</h3>
                     <p class="lead">We Happy Play Kids located at Vidyaranyapura, Bangalore, Karnataka, are one of the best schools providing services like play group, day care centre, teacher training programme and many more. We even organise fun and interesting summer camps for our students. In our summer camp we make sure that children are safe, comfortable and have all the necessary things to make them feel like home. In our school we provide students the utmost quality education through our well crafted curriculum. We focus on the overall development of every child through extra-extracurricular activities. We make sure your kid gains the competitive edge.</p>
-					
-					
-                </div>
+				</div>
                 <div class="col-md-6">
-                    <img src="img/aboutus.jpg" alt="aboutus" width="100%">
-                   
+                    <img src="img/aboutus.jpg" alt="aboutus" width="100%">                   
                 </div>
     </div><!-- container -->
-    
-		
-	<h2>Contact Us</h2>
-		
+	<h2 id="contact_nav">Contact Us</h2>		
 	<div class="row">
                 <div class="col-md-3">
 					<div id="column-count">
@@ -268,8 +242,7 @@
     </div>
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
     
-            <div class="container-fluid">
-                
+            <div class="container-fluid">                
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -282,11 +255,11 @@
                 
                 <div class="collapse navbar-collapse" id="navbar-collapse">                    
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" style="margin-left:15em;">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href=""> Gallery</a></li>
-                        <li><a href="#">About Us </a></li> 
-                        <li><a href="">Contact Us</a></li> 
+                        <li class="active"><a href="#home_nav" style="margin-left:15em;">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery1"> Gallery</a></li>
+                        <li><a href="#aboutus">About Us </a></li> 
+                        <li><a href="#contact_nav">Contact Us</a></li> 
                     </ul>
                 </div>                
             </div>
@@ -302,12 +275,3 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

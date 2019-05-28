@@ -327,7 +327,8 @@ h2{
 .responsive1{
 	padding:0 6px;
 	float:left;
-	width:33%; /* because 33 * 3 images */
+	width:33%;
+	padding:0.5em;
 }
 
 
